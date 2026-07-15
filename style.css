@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    /* border: none; */
+    border-color: transparent;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+input {
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #F6F6F3;
+    padding-block: 50px;
+
+}
+
+.wrapper {
+    width: 823px;
+    height: 865px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 47.1547px rgba(148, 146, 120, 0.23);
+    border-radius: 21px;
+    margin-inline: auto;
+    padding-top: 60px;
+    text-align: center;
+
+
+}
+
+.tip-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+
+}
+
+.dolars {
+    sup {
+        position: relative;
+        top: -20px;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 88px;
+        color: #333333;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 88px;
+        line-height: 88px;
+        color: #333333;
+    }
+}
+
+.total-per-person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    padding-bottom: 47px;
+}
+
+.input-filds {
+    background-color: #F6F6F6;
+    height: 230px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-rule: 0.5px solid #DEDEDE;
+    gap: 20px;
+    column-rule-inset: 10px;
+
+
+    input {
+        width: 400px;
+        border-bottom: 3.2px dotted #B3B3B3;
+        outline: none;
+        font-weight: 700;
+        font-size: 66px;
+        line-height: 80px;
+        color: #333333;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+}
+
+.bill-amount {
+    width: 60%;
+
+    input {
+        background-image: url(./dollar.svg);
+
+    }
+
+}
+
+
+.number-of-people {
+    width: 35%;
+
+    input {
+        width: 200px;
+        background-image: url(./group.svg);
+    }
+}
+
+.filed {
+    margin-bottom: 12px;
+}
+
+.tip-persentages {
+    width: 100%;
+    height: 117.24px;
+    background: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    border-bottom: 1px solid #DEDEDE;
+    
+
+    div {
+        height: 75px;
+        border: 1px solid rgba(255, 0, 0, 0);
+
+    }
+
+    input {
+        appearance: none;
+        display: none;
+    }
+
+    input:checked+label {
+        color: #EEEEEE;
+        background-color: #60C1B6;
+    }
+
+    label {
+        border: 1px solid rgba(0, 255, 8, 0);
+        display: block;
+        align-content: center;
+        width: 145px;
+        height: 75px;
+        background: #FFFFFF;
+        box-shadow: 0px 1.0717px 8.57359px rgba(0, 0, 0, 0.05);
+        border-radius: 17px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 34px;
+        color: #60C1B6;
+        transition: all 0.3s ease-in;
+    }
+
+
+}
+
+.button-wrapper {
+    display: flex;
+    /* background-color: red; */
+    height: 146px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    button {
+        padding: 20px 15px;
+        width: 348px;
+        height: 72px;
+        background: #ED7861;
+        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 17px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+}
